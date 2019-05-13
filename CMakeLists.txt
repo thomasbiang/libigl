@@ -1,4 +1,12 @@
 cmake_minimum_required(VERSION 3.1)
+
+include("cmake/HunterGate.cmake")
+HunterGate(
+  URL "https://github.com/ruslo/hunter/archive/v0.18.18.tar.gz"
+  SHA1 "ae1f72b9e8779a58f763179c77f609c0587d26cd"
+  LOCAL
+  )
+
 project(libigl)
 
 # Detects whether this is a top-level project
