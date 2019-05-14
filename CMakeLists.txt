@@ -30,7 +30,7 @@ write_basic_package_version_file(
 
 # Note: use 'targets_export_name'
 configure_package_config_file(
-    "cmake/Config.cmake.in"
+    "cmake/libigl-config.cmake.in"
     "${project_config}"
     INSTALL_DESTINATION "${config_install_dir}"
 )
