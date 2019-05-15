@@ -7,7 +7,7 @@ cmake_minimum_required(VERSION 3.1)
 ###  LOCAL
 ###  )
 
-project(libigl VERSION "2.0.8")
+project(libigl VERSION "2.0.9")
 
 #===================================== 
 add_library(libigl INTERFACE)
