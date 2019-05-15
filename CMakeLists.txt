@@ -41,11 +41,11 @@ install(
     INCLUDES DESTINATION "${include_install_dir}"
 )
 
-install(
-    DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/include/igl
-    DESTINATION include/igl
-    PATTERN "igl/*"
-)
+###install(
+###    DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/include/igl
+###    DESTINATION include/igl
+###    PATTERN "igl/*"
+###)
 
 install(
     FILES "${project_config}" "${version_config}"
