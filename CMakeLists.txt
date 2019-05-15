@@ -7,7 +7,7 @@ cmake_minimum_required(VERSION 3.1)
 ###  LOCAL
 ###  )
 
-project(libigl VERSION "2.0.9")
+project(libigl VERSION "2.0.10")
 
 #===================================== 
 add_library(libigl INTERFACE)
@@ -41,11 +41,17 @@ install(
     INCLUDES DESTINATION "${include_install_dir}"
 )
 
-###install(
-###    DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/include/igl
-###    DESTINATION include/igl
-###    PATTERN "igl/*"
-###)
+install(
+    DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/include/igl
+    DESTINATION include/igl
+    PATTERN "*"
+)
+
+install(
+    FILES ${CMAKE_CURRENT_LIST_DIR}/include/igl
+    DESTINATION include/igl
+    PATTERN "*"
+)
 
 install(
     FILES "${project_config}" "${version_config}"
