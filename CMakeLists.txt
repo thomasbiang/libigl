@@ -7,7 +7,7 @@ cmake_minimum_required(VERSION 3.1)
 ###  LOCAL
 ###  )
 
-project(libigl VERSION "2.0.11")
+project(libigl VERSION "2.0.12")
 
 #===================================== 
 add_library(libigl INTERFACE)
@@ -45,11 +45,6 @@ install(
     DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/include/igl
     DESTINATION include/ligl
     PATTERN "*"
-)
-
-install(
-    FILES ${CMAKE_CURRENT_LIST_DIR}/include/igl/raytri.c
-    DESTINATION include/ligl
 )
 
 install(
