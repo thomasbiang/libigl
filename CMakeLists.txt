@@ -7,7 +7,7 @@ cmake_minimum_required(VERSION 3.1)
 ###  LOCAL
 ###  )
 
-project(libigl VERSION "2.0.14")
+project(libigl VERSION "2.0.15")
 
 #===================================== 
 add_library(libigl INTERFACE)
@@ -59,8 +59,7 @@ install(
 )
 
 #ywang: so this pull on hunter?
-hunter_add_package(Eigen)
-find_package(Eigen3 REQUIRED) 
+find_package(Eigen3 QUIET)
 #=====================================
 
 # Detects whether this is a top-level project
