@@ -58,6 +58,7 @@ install(
     DESTINATION "${config_install_dir}"
 )
 
+find_package(Eigen3 REQUIRED) #ywang: so this pull on hunter?
 #=====================================
 
 # Detects whether this is a top-level project
